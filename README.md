@@ -1,5 +1,5 @@
 <br>
-<p align="center">:tomato: <b>Project status:</b> <code>work in progress</code>  </p>
+:tomato: <b>Project status:</b> <code>work in progress</code>
 
 ---
 
