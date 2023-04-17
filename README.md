@@ -4,7 +4,7 @@
 ---
 
 <h3> About the project</h3>
-This is my simple final project for the <a href="google.com"><code>CS50's Introduction to Computer Science</code></a> course - a pomodoro timer.
+This is my simple final project for the <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0"><code>CS50's Introduction to Computer Science</code></a> course - a pomodoro timer.
 
 <code>Pomodoro</code> is a time management technique that involves working for 25-minute intervals followed by short breaks, with a longer break after a certain number of intervals. It helps improve focus, productivity, and time management skills.
 
