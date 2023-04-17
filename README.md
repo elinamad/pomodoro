@@ -2,7 +2,6 @@
 <p align="center">:tomato: <b>Project status:</b> <code>work in progress</code>  </p>
 
 ---
-<br>
 
 <h3> About the project</h3>
 This is my simple final project for the <a href="google.com"><code>CS50's Introduction to Computer Science</code></a> course - a pomodoro timer.
@@ -18,9 +17,9 @@ This is my simple final project for the <a href="google.com"><code>CS50's Introd
 
 
 ----
-<br>
 
 <h3> Features </h3>
+<br>
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:tomato: <b>Focus, Break & long break timers</b>
   
@@ -38,6 +37,6 @@ This is my simple final project for the <a href="google.com"><code>CS50's Introd
   
   <br>
   
-  -----
+ 
   
 
