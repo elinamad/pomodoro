@@ -1,5 +1,7 @@
 <br>
-:tomato: <b>Project status:</b> <code>work in progress</code>
+:tomato: <code>Project status: work in progress</code>
+
+:tomato: <code><a href="https://relaxed-sunburst-afe339.netlify.app/">Live preview</a></code>
 
 ---
 
