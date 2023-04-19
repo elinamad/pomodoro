@@ -133,6 +133,7 @@ p{
     font-size:1.5rem;
     color: var(--dark);
     cursor:pointer;
+    margin-bottom:10%;
 }
 
 #apply:hover{
