@@ -562,8 +562,8 @@ darkbtn.addEventListener('click',function(){
     if (darkmode == false){
         darkbtn.classList.remove('disabled');
         darkmode = true;
-        root.style.setProperty('--dark','#ffffff');
-        root.style.setProperty('--light','#3c3c3c');
+        root.style.setProperty('--dark','#ededed');
+        root.style.setProperty('--light','#2E2E2E');
         
     }else{
         darkbtn.classList.add('disabled');
