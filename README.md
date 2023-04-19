@@ -1,5 +1,7 @@
 <br>
 
+<h3 align="center">Simple Pomodoro timer</h3>
+
 :tomato: <code><a href="https://relaxed-sunburst-afe339.netlify.app/">Live preview</a></code>
 
 :tomato: <code><a href="https://www.youtube.com/watch?v=cDtaAZvlXtA">Video Demo</a></code>
