@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="contents">
+
+        <!--stat display-->
+        
+        <div class="stats hide" id="stats">
+            <h3 class="small-label">Stats</h3>
+            <div class="stats-section">
+                <div class="stats-row">
+                    <p>Total time in this session</p>
+                    <div class="total-stats">
+                        <p id="stotal-hours">00</p>
+                        <p id="semicolon">:</p>
+                        <p id="stotal-minutes">00</p>
+                        <p id="semicolon">:</p>
+                        <p id="stotal-seconds">00</p>
+                    </div>
+                </div>
+                <div class="stats-row">
+                    <p>Focus cycles</p>
+                    <p id="counter">0</p>
+                </div>
+                <div class="stats-row">
+                    <p>time spent focusing</p>
+                    <div class="total-stats">
+                        <p id="focus-hours">00</p>
+                        <p class="semicolon">:</p>
+                        <p id="focus-minutes">00</p>
+                        <p class="semicolon">:</p>
+                        <p id="focus-seconds">00</p>
+                    </div>
+                </div>
+
+                <div class="stats-row">
+                    <p>Breaks</p>
+                    <p id="breakcounter">0</p>
+                </div>
+
+                <div class="stats-row">
+                    <p>Time spent resting</p>
+                    <div class="total-stats">
+                        <p id="break-hours">00</p>
+                        <p class="semicolon">:</p>
+                        <p id="break-minutes">00</p>
+                        <p class="semicolon">:</p>
+                        <p id="break-seconds">00</p>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+    
+         <!--main content-->
+    
+        <div id="container">
+    
+            <div class="top">
+                <div id="total">
+                    <h3 id="total-hours">00</h3>
+                    <h3 class="semicolon">:</h3>
+                    <h3 id="total-minutes">00</h3>
+                    <h3 class="semicolon">:</h3>
+                    <h3 id="total-seconds">00</h3>
+                </div>
+            </div>
+    
+            <div class="middle">
+                <h2 id="workbreak" class ="label">Work</h2>
+                <div id="timer">
+                    <p id="minutes">25</p>
+                    <p class="semicolon">:</p>
+                    <p id="seconds">00</p>
+                </div>
+                <div class="controls">
+                    <button id="toggle" class="btn">Start</button>
+                    <button id="reset" class="btn">Reset</button>
+                </div>
+
+            </div>
+
+
+    
+    
+        </div>
+    
+        <!--settings menu-->
+    
+        <div class="settings hide" id ="setmenu">
+            <div id="btnmenu" class="btn-menu">
+                <div id="settingstoggle"><h3 id="settingstext">Settings</h3></div>
+                <form id="settings" class="setting-container hide">
+                    <div class="settingstop">
+                        <div class="settings-row">
+                            <p>Focus duration</p>
+                            <input id="workinput" autocomplete="off" type="text" placeholder="25">
+                        </div>
+                        <div class="settings-row">
+                            <p>Break duration</p>
+                            <input id="breakinput" autocomplete="off" type="text" placeholder="5">
+                        </div>
+                        <div class="settings-row">
+                            <p>Long break duration</p>
+                            <input id="longbreakinput" autocomplete="off" type="text" placeholder="10">
+                        </div>
+                        <div class="settings-row">
+                            <p>Cycles before long break</p>
+                            <input id="cyclesinput" autocomplete="off" type="text" placeholder="4">
+                        </div>
+                        <div class="settings-row">
+                            <p>Notification sound</p>
+                            <div id="sound-btn" class="toggle-btn"><div class="circle"></div></div>
+                        </div>
+                        <div class="settings-row">
+                            <p>Dark mode</p>
+                            <div id="dark-btn" class="toggle-btn disabled"><div class="circle"></div></div>
+                        </div>
+                        <div class="settings-row">
+                            <p>Show stats</p>
+                            <div id ="stats-btn" class="toggle-btn disabled"><div class="circle"></div></div>
+                    </div>
+                   
+                    </div>
+                    <input id="apply" type="submit" value="Apply changes">
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <!--TODO:footer content-->
+     <div class="footer">
+
+    </div>
+
+    <audio id="notification" src="./sound.wav"></audio>
+
+    <script src="./script.js"></script>
+</body>
+</html>
