@@ -460,7 +460,7 @@ h2{
     .settings{
         font-size:1em;
         border-style:none;
-        margin-top:0;
+        margin-top:2vh;
         margin-bottom:0;
         padding:0;
 
@@ -491,7 +491,7 @@ h2{
         height:40px;
         width:100%;
         position:fixed;
-        bottom:0;
+        bottom:2vh;
         width:100%;
     }
 
