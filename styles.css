@@ -323,13 +323,14 @@ h2{
     padding:0;
     color:var(--dark);
     font-weight:500;
-    font-size:1.5rem;
+    font-size:1em;
     cursor:pointer;
 
 }
 
 #settingstoggle{
     margin-bottom:13%;
+    font-size:1em;
     cursor:pointer;
     width:100%;
     display:flex;
