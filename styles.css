@@ -130,7 +130,7 @@ p{
     border-style:solid;
     border-width: 1px;
     border-color:var(--dark);
-    font-size:1.5rem;
+    font-size:1.2rem;
     color: var(--dark);
     cursor:pointer;
     
@@ -170,14 +170,14 @@ input:focus:-ms-input-placeholder {
 
 input{
     all:unset;
-    width:83px;
-    height:45px;
+    width:85px;
+    height:40px;
     border-style:solid;
     border-radius: 30px;
     border-width:1px;
     border-color:var(--dark);
     text-align: center;
-    font-size:1.5rem;
+    font-size:1.2rem;
     background-color: transparent;
 
 }
@@ -189,7 +189,7 @@ input{
 
 .top {
     position:absolute;
-    font-size:1.5rem;
+    font-size:1.2rem;
 }
 
 .toggle-btn{
@@ -200,7 +200,7 @@ input{
     -webkit-box-sizing: border-box;
     border-width: 0px;
     width:90px;
-    height:50px;
+    height:40px;
     border-radius: 30px;
     display:flex;
     align-items: center;
@@ -220,7 +220,7 @@ input{
     background-color: var(--light);
     border-width: 1px;
     width:90px;
-    height:50px;
+    height:40px;
     border-radius: 30px;
     display:flex;
     align-items: center;
@@ -234,8 +234,8 @@ input{
     -webkit-box-sizing: border-box;
     border-style:solid;
     border-width:1px;
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
     border-radius:100%;
 
 
@@ -262,7 +262,7 @@ h2{
    height:50px;
    width:47%;
    border-radius:20px;
-   font-size:1.5rem;
+   font-size:1.2rem;
    cursor:pointer;
 
 }
@@ -277,7 +277,7 @@ h2{
 .settings{
     height:94vh;
     width:400px;
-    font-size:1.5rem;
+    font-size:1.2rem;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -312,7 +312,7 @@ h2{
 }
 
 .settings-row{
-    margin-bottom:3vh;
+    margin-bottom:2vh;
 }
 
 .setting-container{
@@ -355,7 +355,7 @@ h2{
     padding:1%;
     display:flex;
     flex-direction: column;
-    font-size:1.5rem;
+    font-size:1.2rem;
     width:400px;
     height:30vh;
     justify-content: flex-start;
@@ -374,7 +374,7 @@ h2{
 .small-label{
     padding:0;
     margin:0;
-    font-size:1.5rem;
+    font-size:1.2rem;
     margin-bottom:10%;
     text-align: center;
 }
@@ -384,7 +384,7 @@ h2{
 @media (max-width: 1024px) { 
     .stats{
         all:unset;
-        font-size:1.5rem;
+        font-size:1.2rem;
         position:absolute;
         bottom:5%;
         left:50%;
@@ -410,7 +410,7 @@ h2{
     }
 
     .stats-row{
-        margin-bottom:5px;
+        margin-bottom:2vh;
     }
 
     .small-label{
