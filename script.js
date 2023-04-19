@@ -164,14 +164,15 @@ if(settings == false) {
 
 //event listeners
 
-toggle.addEventListener('click',function(){
+function toggleTimer() {
     if(!timerRunning) {
         if (startTimer == undefined) {
             startTimer =setInterval(timer,1000)
             document.title = "Work";
             timerRunning= true;
             toggle.innerText = "Stop";
-            toggle.classList.add("active")
+            toggle.classList.toggle("active");
+
 
         }
     }else {
@@ -180,10 +181,19 @@ toggle.addEventListener('click',function(){
         timerRunning = false;
         document.title = "Pomodoro";
         toggle.innerText = "Start";
-        toggle.classList.remove("active");
+        toggle.classList.toggle("active");
+
+        
         
     }
-});
+
+    toggle.offsetHeight;
+};
+
+toggle.addEventListener('pointerup',toggleTimer);
+
+
+
 
 applybtn.addEventListener('click',function(event){
     applySettings(event);
@@ -447,6 +457,10 @@ function timer() {
 
 function stopInterval(){
     clearInterval(startTimer);
+    requestAnimationFrame(() => {
+        toggle.innerText = "Start";
+        toggle.classList.remove("active");
+    });
 }
 
 //setting apply function
