@@ -35,9 +35,7 @@ let seconds = document.getElementById('seconds');
 //cycle counter
 
 let counter = document.getElementById('counter');
-
 let breakcounter = document.getElementById('breakcounter');
-
 let longbreakcounter = 0;
 
 //settings apply button
@@ -45,14 +43,15 @@ let longbreakcounter = 0;
 let applybtn = document.getElementById('apply');
 
 
-
 //display work / break
 
 let workbreak = document.getElementById('workbreak');
 
-//other variables
-
+//custom settings variable
 let settings = false;
+
+//other timer variables
+
 let startTimer;
 let worktime = true;
 let breaktime = false;
@@ -132,37 +131,31 @@ if (worktime){
 
 }
 
-
-//Checks if default or custom settings and applies
+//Checks if there are any custom settings and applies them
 
 if(settings == false) {
-    //no settings work timer
+    //set work timer to default value
     if (worktime) {
         minutes.innerText = defaultwm;
         seconds.innerText = defaultws;
-    //no settings break timer
+    //set break timer to default value
     } else {
         minutes.innerText = defaultbm;
         seconds.innerText = defaultbs;
     }
 }else{
-    //work timer with settings
+    //set work timer with custom value
     if (worktime){
         minutes.innerText = wmvalue;
         seconds.innerText = defaultws;
-    //break timer with settings
+    //set break timer with custom value
     } else {
         minutes.innerText = bmvalue;
         seconds.innerText = defaultbs;
     }
 }
 
-// format number to 00:00 function
-
-
-
-
-//event listeners
+//Start and stop button
 
 function toggleTimer() {
     if(!timerRunning) {
@@ -193,7 +186,7 @@ function toggleTimer() {
 toggle.addEventListener('pointerup',toggleTimer);
 
 
-
+//apply settings button
 
 applybtn.addEventListener('click',function(event){
     applySettings(event);
@@ -208,6 +201,7 @@ function revertapply(){
     applybtn.classList.remove("active");
 }
 
+//reset button
 
 reset.addEventListener('click',function(){
     stopInterval()
@@ -249,7 +243,7 @@ function revertreset(){
 
 function timer() {
 
-    //if work timer
+    //work timer
     if (worktime) {
         workbreak.innerText = "Work"
         document.title = "Work";
@@ -263,7 +257,7 @@ function timer() {
             minutes.innerText = formatNumber(minutes.innerText - 1);
         }
 
-        //format the minutes to display as 00 instead of 0 on the last minute
+        //format the minutes to display as 00 on the last minute
 
         if(minutes.innerText == 0 && seconds.innerText != 0){
             minutes.innerText = "00";
@@ -286,6 +280,7 @@ function timer() {
             breaktime = true;
             counter.innerText ++;
             longbreakcounter ++;
+
             //set to break values
            
             if (settings == false) {
@@ -331,7 +326,7 @@ function timer() {
             
         }
 
-    //if break timer
+    //break timer
     } else {
         if (islongbreak == true){
             workbreak.innerText = "Long Break"
@@ -451,7 +446,6 @@ function timer() {
     
     //show timer on title tag
     
-
     document.title = `${workbreak.innerText}  (${minutes.innerText}:${seconds.innerText})`;
 }
 
